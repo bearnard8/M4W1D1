@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Crea una funzione che controlli due numeri interi. Ritorna 'true' se uno dei due è 50 o de la somma dei due è 50.
+        
+        /*let x = 5;
+        let y = 0;
+
+        function check () {
+            if (x === 50 || y === 50 || x + y === 50) {
+                console.log(true);
+            } else {
+                console.log(false); 
+            }
+        }
+
+        check();*/
+
+        //crea una funzione che rimuova il carattere ad una specifica posizione da una stringa. Passa la stringa e la posizione come parametri e ritorna la stringa modificata.
+
+        /*function remove(word, pos ) {
+            word = word.substr(pos, 1); 
+            console.log(word);
+            return word;
+        }
+
+        remove("ciao", 2);*/
+
+        //crea una funzione che controlli se due numeri siano compresi tra 40 e 60 o tra 70 e 100, ritorna true se rispecchiano queste condizioni
+
+        /*function check (x, y) {
+            if (x >= 40 && x <= 60 && y >= 40 && y <= 60 || x >= 70 && x <= 100 && y >= 70 && y <= 100) {
+                console.log(true);
+            } else {
+                console.log(false); 
+            }
+        }
+
+        check(90, 80)*/
+
+        //crea una funzione che accetti un nome di città come parametro e ritorni il nome stesso se inizia con "Los" o "New", altrimenti ritorni false
+
+        /*function checkCityName (name) {
+            if (name.substr(0, 3) === "New" || name.substr(0, 3) === "Los") {
+                return name;
+            } else {
+                return false;
+            }
+        };
+
+        console.log(checkCityName("Angeles"));*/
+
+        //crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array, l'array dev'essere passato come parametro
+
+        /*function arraySum (array) {
+            let sum = 0;
+            array.forEach(element => {
+                sum += element;
+            });
+            return sum;
+        }
+
+        console.log(arraySum([1, 2, 3]))*/
+
+        //crea una funzione che controlli che un array non contenga i numeri 1 o 3, se non li contiene ritorna true, altrimenti false
+
+        /*function checkArray (array) {
+            let check = true;
+            array.forEach(element => {
+                if (element === 1 || element === 3){
+                    check = false;
+                }
+            });
+            return check
+        }
+
+        console.log(checkArray([12, 2, 5]));*/
+
+        //crea una funzione per trovare il tipo di angolo i cui gradi sono passati come paramentro: mendo i 90 torna acuto, tra 90 e 180 torna ottuso, = a 90 torna retto, = a 180 torna piatto
+
+        /*function checkAngle (angle) {
+            let angleName = "";
+            if (angle === 90) {
+                angleName = "Retto";
+            } else if (angle === 180) {
+                angleName = "Piatto";
+            } else if (angle >= 0 && angle < 90) {
+                angleName = "Acuto";
+            } else if (angle > 90 && angle < 180) {
+                angleName = "Ottuso";
+            }
+
+            return angleName
+        }
+
+        console.log(checkAngle(90));*/
+
+        //crea una funzione che crei un acronimo a partire da una frase, es "Fabbrica Italiana Automobili Torino" deve tornare Fiat
+
+        /*function makeAcronym (string) {
+            let acronym = "";
+            let spacesCount = 0;
+            let spaceIndex = string.indexOf(" ");
+            acronym = string[0];
+
+            for (let i = 0; i < string.length; i++) {
+                if(string.charAt(i) === " "){
+                    spacesCount++;   
+                }
+            }
+
+            while (spacesCount > 0) {
+                string = string.slice(spaceIndex + 1);
+                acronym += string[0];
+                spaceIndex = string.indexOf(" ");
+                spacesCount--;
+            }
+            return acronym;
+        }
+
+        console.log(makeAcronym("Scrivi Qui La Tua Stringa"));*/
+    </script>
+
+</body>
+</html>
